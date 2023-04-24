@@ -31,8 +31,9 @@ public class Undo {
 			
 			orders.remove(orders.size()-1);
 
+		}else {
+			System.out.println("Antes de deshacer tendria que añadir un pedido");
 		}
-		System.out.println("Antes de deshacer tendria que añadir un pedido");
 	}
 	
 	public void toListInstances() {

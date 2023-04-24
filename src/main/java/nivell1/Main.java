@@ -30,23 +30,23 @@ public class Main {
 			input.nextLine();
 
 			switch(opcion) {
-			
+
 			case 1:
 				System.out.println("Introduce el pedido que quieres añadir en la lista");
 				String order=input.nextLine();
 				u.addInstance(order);
 				break;
-				
+
 			case 2:
 				u.undo();
 				break;
-				
+
 			case 3:
 				u.toListInstances();
 				break;
 			default:
 				System.out.println("Opción no disponible");
-				
+
 			}
 		}
 	}
