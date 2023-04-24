@@ -5,16 +5,16 @@ import java.util.ArrayList;
 public class Undo {
 	
 	private static Undo instance;
-	private static ArrayList<String> orders=new ArrayList<String>();
-	
+	private static ArrayList<String> orders;
+
 	private Undo() {
-		
+		orders = new ArrayList<>();
 	}
 	
 	public static Undo getInstance	() {
 		
 		if(instance ==null) {
-			return instance=new Undo();
+			instance=new Undo();
 		}
 		return instance;
 	}
@@ -27,7 +27,7 @@ public class Undo {
 	
 	public void undo() {
 		
-		if (orders.size()!=0 ) {
+		if (orders.size()> 0 ) {
 			
 			orders.remove(orders.size()-1);
 
